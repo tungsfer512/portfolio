@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/Components/Header/Header.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1659516963141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659516970708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n \r\n-const Content = (props) => {\r\n+const Header = (props) => {\r\n   return (\r\n-    <div className=\"content\">\r\n-      hello Content\r\n+    <div className=\"header\">\r\n+      hello Header\r\n     </div>\r\n   )\r\n\\ No newline at end of file\n }\r\n \r\n-export default Content;\n+export default Header;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659516982337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n \r\n const Header = (props) => {\r\n   return (\r\n-    <div className=\"header\">\r\n+    <hedaer className=\"header\">\r\n       hello Header\r\n-    </div>\r\n+    </hedaer>\r\n   )\r\n }\r\n \r\n export default Header;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659516989138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n \r\n const Header = (props) => {\r\n   return (\r\n-    <hedaer className=\"header\">\r\n+    <header className=\"header\">\r\n       hello Header\r\n-    </hedaer>\r\n+    </<head>\r\n+      \r\n+    </head>>\r\n   )\r\n }\r\n \r\n export default Header;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659519956147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n \r\n \r\n+\r\n const Header = (props) => {\r\n   return (\r\n     <header className=\"header\">\r\n       hello Header\r\n"
+                },
+                {
+                    "date": 1659520212738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   return (\r\n     <header className=\"header\">\r\n       <Navbar bg=\"light\" expand=\"lg\">\r\n         <Container>\r\n-          <Navbar.Brand href=\"#home\">BUI</Navbar.Brand>\r\n+          <Navbar.Brand href=\"#home\">BUI </Navbar.Brand>\r\n           <Navbar.Toggle aria-controls=\"basic-navbar-nav\" />\r\n           <Navbar.Collapse id=\"basic-navbar-nav\">\r\n             <Nav className=\"me-auto\">\r\n               <NavLink to=\"/\">Home</NavLink>\r\n"
+                }
+            ],
+            "date": 1659516963141,
+            "name": "Commit-0",
+            "content": "\r\nconst Content = (props) => {\r\n  return (\r\n    <div className=\"content\">\r\n      hello Content\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Content;"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/Components/Header/Header.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1659536175407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659536224205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .active {\r\n-  color: white !important;\r\n+  color: green !important;\r\n   font-weight: 600 !important;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659536353959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .active {\r\n-  color: green !important;\r\n+  // color: green !important;\r\n   font-weight: 600 !important;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659536670448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,3 @@\n .active {\r\n-  // color: green !important;\r\n   font-weight: 600 !important;\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1659536175407,
+            "name": "Commit-0",
+            "content": ".active {\r\n  color: white !important;\r\n  font-weight: 600 !important;\r\n}"
+        }
+    ]
+}

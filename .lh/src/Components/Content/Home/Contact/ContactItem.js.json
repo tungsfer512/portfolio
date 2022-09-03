@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/Components/Content/Home/Contact/ContactItem.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1659543454885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659543478129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n \r\n \r\n-import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const About = (props) => {\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1659543487735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,13 @@\n \r\n \r\n \r\n-const About = (props) => {\r\n+const ContactItem = (props) => {\r\n \r\n   return (\r\n-    <div className=\"about\">\r\n-      <Breadcrumb></Breadcrumb>\r\n+    <div className=\"ContactItem\">\r\n \r\n     </div>\r\n   )\r\n }\r\n\\ No newline at end of file\n \r\n-export default About;\n+export default ContactItem;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659543495019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const ContactItem = (props) => {\r\n \r\n   return (\r\n-    <div className=\"ContactItem\">\r\n+    <div className=\"contactItem\">\r\n \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659543500646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const ContactItem = (props) => {\r\n \r\n   return (\r\n     <div className=\"contactItem\">\r\n-\r\n+      \r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545124763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const ContactItem = (props) => {\r\n \r\n   return (\r\n     <div className=\"contactItem\">\r\n-      \r\n+      <i></i>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545130429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const ContactItem = (props) => {\r\n \r\n   return (\r\n     <div className=\"contactItem\">\r\n-      <i></i>\r\n+      <i className=\"bi bi-\"></i>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545145399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const ContactItem = (props) => {\r\n \r\n   return (\r\n     <div className=\"contactItem\">\r\n-      <i className=\"bi bi-\"></i>\r\n+      <i className=\"bi bi-linkedin\" tit></i>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545151291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const ContactItem = (props) => {\r\n \r\n   return (\r\n     <div className=\"contactItem\">\r\n-      <i className=\"bi bi-linkedin\" tit></i>\r\n+      <i className=\"bi bi-linkedin\" title={prop}></i>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545157948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const ContactItem = (props) => {\r\n \r\n   return (\r\n     <div className=\"contactItem\">\r\n-      <i className=\"bi bi-linkedin\" title={prop}></i>\r\n+      <i className=\"bi bi-linkedin\" title={props.title}></i>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545207793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,10 @@\n \r\n-\r\n-\r\n const ContactItem = (props) => {\r\n \r\n   return (\r\n     <div className=\"contactItem\">\r\n-      <i className=\"bi bi-linkedin\" title={props.title}></i>\r\n+      <i class=\"bi bi-linkedin\"></i>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545227417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n const ContactItem = (props) => {\r\n \r\n   return (\r\n     <div className=\"contactItem\">\r\n-      <i class=\"bi bi-linkedin\"></i>\r\n+      <i className=\"bi bi-linkedin\" title={props.title}></i>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545248102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n const ContactItem = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contactItem h\">\r\n+    <div className=\"contactItem h-1\">\r\n       <i className=\"bi bi-linkedin\" title={props.title}></i>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659545697078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n \r\n   return (\r\n     <div className=\"contactItem d-flex align-items-center justify-content-center\">\r\n       <Link to=\"/home\">\r\n-        \r\n+\r\n+      <i className=\"bi bi-linkedin text-white w-100 h-100\" title={props.title}></i>\r\n       </Link>\r\n-      <i className=\"bi bi-linkedin text-white w-100 h-100\" title={props.title}></i>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1659543454885,
+            "name": "Commit-0",
+            "content": "\r\n\r\nimport Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n\r\nconst About = (props) => {\r\n\r\n  return (\r\n    <div className=\"about\">\r\n      <Breadcrumb></Breadcrumb>\r\n\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default About;"
+        }
+    ]
+}

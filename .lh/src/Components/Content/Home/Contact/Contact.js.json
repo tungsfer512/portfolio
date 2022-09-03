@@ -1,0 +1,126 @@
+{
+    "sourceFile": "src/Components/Content/Home/Contact/Contact.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1659543453598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659543459931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n \r\n \r\n-import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const About = (props) => {\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1659543470177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,13 @@\n \r\n \r\n \r\n-const About = (props) => {\r\n+const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"about\">\r\n-      <Breadcrumb></Breadcrumb>\r\n+    <div className=\"Contact\">\r\n \r\n     </div>\r\n   )\r\n }\r\n\\ No newline at end of file\n \r\n-export default About;\n+export default Contact;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659544860788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"Contact\">\r\n-\r\n+    <div className=\"contact\">\r\n+      \r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659544868296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n+import ContactItem from \"./ContactItem\";\r\n \r\n \r\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact\">\r\n-      \r\n+      <ContactItem></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659544903928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact\">\r\n-      <ContactItem></ContactItem>\r\n+      <ContactItem ></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659544910024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact\">\r\n-      <ContactItem ></ContactItem>\r\n+      <ContactItem icon=\"\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659544936764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact\">\r\n+      <ContactItem icon=\"linkedin\"></ContactItem>\r\n       <ContactItem icon=\"\"></ContactItem>\r\n+      <ContactItem icon=\"\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659544943785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n \r\n   return (\r\n     <div className=\"contact\">\r\n       <ContactItem icon=\"linkedin\"></ContactItem>\r\n+      <ContactItem icon=\"facebook\"></ContactItem>\r\n       <ContactItem icon=\"\"></ContactItem>\r\n-      <ContactItem icon=\"\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659544993938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact\">\r\n-      <ContactItem icon=\"linkedin\"></ContactItem>\r\n-      <ContactItem icon=\"facebook\"></ContactItem>\r\n-      <ContactItem icon=\"\"></ContactItem>\r\n+      <ContactItem title icon=\"linkedin\"></ContactItem>\r\n+      <ContactItem title icon=\"facebook\"></ContactItem>\r\n+      <ContactItem title icon=\"github\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545001367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact\">\r\n-      <ContactItem title icon=\"linkedin\"></ContactItem>\r\n-      <ContactItem title icon=\"facebook\"></ContactItem>\r\n-      <ContactItem title icon=\"github\"></ContactItem>\r\n+      <ContactItem title=\"Facebook\" icon=\"linkedin\"></ContactItem>\r\n+      <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n+      <ContactItem title=\"Facebook\" icon=\"github\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545006944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact\">\r\n-      <ContactItem title=\"Facebook\" icon=\"linkedin\"></ContactItem>\r\n+      <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"github\"></ContactItem>\r\n     </div>\r\n   )\r\n"
+                },
+                {
+                    "date": 1659545514873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact\">\r\n+    <div className=\"contact d\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n-      <ContactItem title=\"Facebook\" icon=\"github\"></ContactItem>\r\n+      <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659545522445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d\">\r\n+    <div className=\"contactd-flex align-items-center justify-content-center\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545529735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contactd-flex align-items-center justify-content-center\">\r\n+    <div className=\"contact d-flex align-items-center justify-content-bet\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545819952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-bet\">\r\n+    <div className=\"contact d-flex align-items-center justify-content-between \">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545826536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-between \">\r\n+    <div className=\"contact d-flex align-items-center justify-content-between flex-\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545831859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-between flex-\">\r\n+    <div className=\"contact d-flex align-items-center justify-content-between flex-grow\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545846993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-between flex-grow\">\r\n+    <div className=\"contact d-flex align-items-center justify-content-between flex-shi-1\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545864326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-between flex-shi-1\">\r\n+    <div className=\"contact d-flex align-items-center justify-content-between \">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545889465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-between \">\r\n+    <div className=\"contact d-flex align-items-center justify-content-between row w-100\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545899467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-between row w-100\">\r\n+    <div className=\"contact d-flex align-items-center justify-content-cn row w-100\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659545908414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-cn row w-100\">\r\n+    <div className=\"contact d-flex align-items-center justify-content-center w-100\">\r\n       <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659547513820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact d-flex align-items-center justify-content-center w-100\">\r\n-      <ContactItem title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n-      <ContactItem title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n-      <ContactItem title=\"GitHub\" icon=\"github\"></ContactItem>\r\n+      <ContactItem link title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n+      <ContactItem link title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n+      <ContactItem link title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659547535798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact d-flex align-items-center justify-content-center w-100\">\r\n-      <ContactItem link title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n-      <ContactItem link title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n-      <ContactItem link title=\"GitHub\" icon=\"github\"></ContactItem>\r\n+      <ContactItem link=\"\" title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n+      <ContactItem link=\"\" title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n+      <ContactItem link=\"https://github.com/tungsfer512?tab=repositories\" title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659547600621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n   return (\r\n     <div className=\"contact d-flex align-items-center justify-content-center w-100\">\r\n       <ContactItem link=\"\" title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n-      <ContactItem link=\"\" title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n+      <ContactItem link=\"https://www.facebook.com/tung.buivan.sfer.11235\" title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem link=\"https://github.com/tungsfer512?tab=repositories\" title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659547703761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const Contact = (props) => {\r\n \r\n   return (\r\n     <div className=\"contact d-flex align-items-center justify-content-center w-100\">\r\n-      <ContactItem link=\"\" title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n+      <ContactItem link=\"https://www.linkedin.com/in/t%C3%B9ng-b%C3%B9i-v%C4%83n-800177219/\" title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem link=\"https://www.facebook.com/tung.buivan.sfer.11235\" title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem link=\"https://github.com/tungsfer512?tab=repositories\" title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n   )\r\n"
+                },
+                {
+                    "date": 1659548859092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Contact = (props) => {\r\n \r\n   return (\r\n-    <div className=\"contact d-flex align-items-center justify-content-center w-100\">\r\n+    <div className=\"contact d-flex align-items-center justify-content-center w-100 flex-\">\r\n       <ContactItem link=\"https://www.linkedin.com/in/t%C3%B9ng-b%C3%B9i-v%C4%83n-800177219/\" title=\"LinkedIn\" icon=\"linkedin\"></ContactItem>\r\n       <ContactItem link=\"https://www.facebook.com/tung.buivan.sfer.11235\" title=\"Facebook\" icon=\"facebook\"></ContactItem>\r\n       <ContactItem link=\"https://github.com/tungsfer512?tab=repositories\" title=\"GitHub\" icon=\"github\"></ContactItem>\r\n     </div>\r\n"
+                }
+            ],
+            "date": 1659543453598,
+            "name": "Commit-0",
+            "content": "\r\n\r\nimport Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n\r\nconst About = (props) => {\r\n\r\n  return (\r\n    <div className=\"about\">\r\n      <Breadcrumb></Breadcrumb>\r\n\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default About;"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Components/Content/Breadcrumb/MyBreadcrumb.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1659544807051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1659544807051,
+            "name": "Commit-0",
+            "content": "import { useEffect } from \"react\";\r\nimport {\r\n  Link,\r\n  useLocation,\r\n} from \"react-router-dom\";\r\nimport { Breadcrumb } from \"react-bootstrap\";\r\n\r\nconst MyBreadcrumb = (props) => {\r\n\r\n  let location = useLocation();\r\n\r\n  console.log(location)\r\n  let pathName = ['home', ...location.pathname.slice(1).split('/')];\r\n  pathName = pathName.filter((path) => path !== '');\r\n  console.log(pathName)\r\n  let page = pathName?.pop();\r\n  console.log(page);\r\n  useEffect(() => {\r\n\r\n  }, []);\r\n\r\n  return (\r\n    <Breadcrumb style={{\r\n      height: 200,\r\n    }} className=\"d-flex align-items-center justify-content-center bg-success bg-opacity-50\">\r\n      {\r\n        pathName.length !== 0\r\n        &&\r\n        pathName.map((alter) => {\r\n          return (\r\n            <Breadcrumb.Item linkAs=\"span\" key={alter} className=\"fs-4\">\r\n              <Link to={(\"/\" + alter) === \"/home\" ? \"/\" : (\"/\" + alter)}\r\n                className=\"link-secondary text-decoration-none fs-4\"\r\n              >\r\n                {alter[0]?.toUpperCase() + alter?.substring(1)}\r\n              </Link>\r\n            </Breadcrumb.Item>\r\n          )\r\n        })\r\n      }\r\n      <Breadcrumb.Item active className=\"text-black fs-4\">{page[0].toUpperCase() + page.substring(1)}</Breadcrumb.Item>\r\n    </Breadcrumb>\r\n  )\r\n}\r\n\r\nexport default MyBreadcrumb;"
+        }
+    ]
+}

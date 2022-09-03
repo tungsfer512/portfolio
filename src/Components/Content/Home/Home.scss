@@ -1,0 +1,63 @@
+.home {
+  min-height         : calc(100vh - 56px);
+  height             : calc(100vh - 56px);
+  // background-image   : url("../../../Assets/Images/header-bg.jpg");
+  // background-size    : cover;
+  // background-position: bottom center;
+  // background-repeat  : no-repeat;
+
+  &-content {
+    transform: translateY(-70px);
+
+    &-heading {
+      color                  : transparent !important;
+      background-clip        : text !important;
+      -webkit-background-clip: text !important;
+      background-image       :
+        radial-gradient(at 23% 84%, #5cdbb5 0px, transparent 50%),
+        radial-gradient(at 23% 37%, #e6f958 0px, transparent 50%),
+        radial-gradient(at 83% 45%, #85f9a0 0px, transparent 50%),
+        radial-gradient(at 98% 62%, #fa3d59 0px, transparent 50%),
+        radial-gradient(at 57% 58%, #fb98f3 0px, transparent 50%),
+        radial-gradient(at 15% 38%, #f589c1 0px, transparent 50%),
+        radial-gradient(at 20% 85%, #ecf98b 0px, transparent 50%) !important;
+      background-position: center !important;
+      background-size    : cover !important;
+    }
+
+    &-name {
+      color                  : transparent !important;
+      background-clip        : text !important;
+      -webkit-background-clip: text !important;
+      background-image       :
+        radial-gradient(at 37% 84%, #f9ca48 0px, transparent 50%),
+        radial-gradient(at 15% 24%, #f3e853 0px, transparent 50%),
+        radial-gradient(at 26% 91%, #b6ef80 0px, transparent 50%),
+        radial-gradient(at 32% 16%, #c286f3 0px, transparent 50%),
+        radial-gradient(at 96% 51%, #84eb6f 0px, transparent 50%),
+        radial-gradient(at 71% 17%, #b4ea76 0px, transparent 50%),
+        radial-gradient(at 80% 73%, #5661fb 0px, transparent 50%),
+        radial-gradient(at 79% 21%, #8dbde8 0px, transparent 50%) !important;
+      background-position: center !important;
+      background-size    : cover !important;
+    }
+
+    &-position {
+      color                  : transparent !important;
+      background-clip        : text !important;
+      -webkit-background-clip: text !important;
+      background-image       :
+        radial-gradient(at 86% 76%, #8ec6fa 0px, transparent 50%),
+        radial-gradient(at 12% 65%, #57e5c9 0px, transparent 50%),
+        radial-gradient(at 29% 64%, #8c95fd 0px, transparent 50%),
+        radial-gradient(at 38% 88%, #c999ea 0px, transparent 50%),
+        radial-gradient(at 87% 38%, #6ecfe7 0px, transparent 50%),
+        radial-gradient(at 47% 5%, #d296fd 0px, transparent 50%),
+        radial-gradient(at 1% 32%, #63f8bc 0px, transparent 50%),
+        radial-gradient(at 61% 72%, #e57bce 0px, transparent 50%) !important;
+      background-position: center !important;
+      background-size    : cover !important;
+    }
+  }
+
+}

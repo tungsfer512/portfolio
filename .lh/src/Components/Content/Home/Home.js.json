@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/Components/Content/Home/Home.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1659518146144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659518151654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n-import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\r\n \r\n const Content = (props) => {\r\n   return (\r\n-    <Routes>\r\n       <div className=\"content\">\r\n         hello Content\r\n       </div>\r\n \r\n"
+                },
+                {
+                    "date": 1659518161777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,10 @@\n \r\n-const Content = (props) => {\r\n+const Home = (props) => {\r\n   return (\r\n-      <div className=\"content\">\r\n-        hello Content\r\n+      <div className=\"Home\">\r\n+        hello Home\r\n       </div>\r\n-\r\n-      <Routes>\r\n-        <Route path=\"/\" element={<Home />}></Route>\r\n-      </Routes>\r\n-    </Routes>\r\n   )\r\n\\ No newline at end of file\n }\r\n \r\n-export default Content;\n+export default Home;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659537611173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n+import { Breadcrumb } from \"react-bootstrap\";\r\n \r\n const Home = (props) => {\r\n   return (\r\n-      <div className=\"Home\">\r\n-        hello Home\r\n+      <div className=\"home\">\r\n+        <Breadcrumb\r\n       </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659537619418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-import { Breadcrumb } from \"react-bootstrap\";\r\n+import Brea\r\n \r\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n-        <Breadcrumb\r\n+        <Breadcrumb></Breadcrumb>\r\n       </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659537626971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Brea\r\n+import Breadcrumb\r\n \r\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n"
+                },
+                {
+                    "date": 1659537632612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb\r\n+import Breadcrumb from \"./\"\r\n \r\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n"
+                },
+                {
+                    "date": 1659537638796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb from \"./\"\r\n+import Breadcrumb from \"../\"\r\n \r\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n"
+                },
+                {
+                    "date": 1659537648241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb from \"../\"\r\n+import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n"
+                },
+                {
+                    "date": 1659537654660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n+import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n"
+                },
+                {
+                    "date": 1659537664221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n+import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n"
+                },
+                {
+                    "date": 1659539601634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n \r\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n-        <Breadcrumb></Breadcrumb>\r\n+        <Breadcrumb></Breadcrumb>\r\n+        \r\n       </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659539610197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n         <Breadcrumb></Breadcrumb>\r\n-        \r\n+        <div></div>\r\n       </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659539615719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n         <Breadcrumb></Breadcrumb>\r\n-        <div></div>\r\n+        <div className=\"h-100\"></div>\r\n       </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659543617519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Home = (props) => {\r\n   return (\r\n       <div className=\"home\">\r\n         <Breadcrumb></Breadcrumb>\r\n-        <div className=\"minv-h-100\">\r\n+        <div className=\"minvh-100\">\r\n \r\n         </div>\r\n       </div>\r\n   )\r\n"
+                },
+                {
+                    "date": 1659543787695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   return (\r\n       <div className=\"home\">\r\n         <Breadcrumb></Breadcrumb>\r\n         <div className=\"min-vh-100 bg-secondary bg-opacity-25\">\r\n-          <h1>I'm BUI VAN TUNG</h1>\r\n+          <h1>I' BUI VAN TUNG</h1>\r\n         </div>\r\n       </div>\r\n   )\r\n }\r\n"
+                }
+            ],
+            "date": 1659518146144,
+            "name": "Commit-0",
+            "content": "import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\r\n\r\nconst Content = (props) => {\r\n  return (\r\n    <Routes>\r\n      <div className=\"content\">\r\n        hello Content\r\n      </div>\r\n\r\n      <Routes>\r\n        <Route path=\"/\" element={<Home />}></Route>\r\n      </Routes>\r\n    </Routes>\r\n  )\r\n}\r\n\r\nexport default Content;"
+        }
+    ]
+}

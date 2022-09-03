@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/Components/Content/About/About.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1659518328725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659518335571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n-import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\r\n \r\n const Content = (props) => {\r\n   return (\r\n-    <Routes>\r\n       <div className=\"content\">\r\n         hello Content\r\n       </div>\r\n \r\n"
+                },
+                {
+                    "date": 1659518342452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,10 @@\n \r\n const Content = (props) => {\r\n   return (\r\n-      <div className=\"content\">\r\n-        hello Content\r\n-      </div>\r\n-\r\n-      <Routes>\r\n-        <Route path=\"/\" element={<Home />}></Route>\r\n-      </Routes>\r\n-    </Routes>\r\n+    <div className=\"content\">\r\n+      hello Content\r\n+    </div>\r\n   )\r\n }\r\n \r\n export default Content;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659518348241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n \r\n-const Content = (props) => {\r\n+const About = (props) => {\r\n   return (\r\n-    <div className=\"content\">\r\n-      hello Content\r\n+    <div className=\"About\">\r\n+      hello About\r\n     </div>\r\n   )\r\n\\ No newline at end of file\n }\r\n \r\n-export default Content;\n+export default About;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659520965254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n \r\n const About = (props) => {\r\n   return (\r\n-    <div className=\"About\">\r\n+    <div className=\"about\">\r\n       hello About\r\n+      <Brea\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659521025984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const About = (props) => {\r\n   return (\r\n     <div className=\"about\">\r\n-      hello About\r\n-      <Brea\r\n+      <Breadcrumb></Breadcrumb>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659531709172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,10 @@\n import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n-\r\n+import {\r\n+  useLocation,\r\n+  useNavigate,\r\n+  useParams,\r\n+} from \"react-router-dom\";\r\n const About = (props) => {\r\n   return (\r\n     <div className=\"about\">\r\n       <Breadcrumb></Breadcrumb>\r\n"
+                },
+                {
+                    "date": 1659531717093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n   useLocation,\r\n   useNavigate,\r\n   useParams,\r\n } from \"react-router-dom\";\r\n+\r\n const About = (props) => {\r\n+  let location = \r\n   return (\r\n     <div className=\"about\">\r\n       <Breadcrumb></Breadcrumb>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659531726792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n } from \"react-router-dom\";\r\n \r\n const About = (props) => {\r\n   let location = useLocation();\r\n-  let navigate \r\n+  let navigate = \r\n   return (\r\n     <div className=\"about\">\r\n       <Breadcrumb></Breadcrumb>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1659531759009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,11 @@\n   let navigate = useNavigate();\r\n   let params = useParams();\r\n \r\n   console.log(location)\r\n+  console.log(l\r\n+    ocation)\r\n   console.log(location)\r\n-  console.log(location)\r\n \r\n   return (\r\n     <div className=\"about\">\r\n       <Breadcrumb></Breadcrumb>\r\n"
+                }
+            ],
+            "date": 1659518328725,
+            "name": "Commit-0",
+            "content": "import { BrowserRouter as Router, Routes, Route } from \"react-router-dom\";\r\n\r\nconst Content = (props) => {\r\n  return (\r\n    <Routes>\r\n      <div className=\"content\">\r\n        hello Content\r\n      </div>\r\n\r\n      <Routes>\r\n        <Route path=\"/\" element={<Home />}></Route>\r\n      </Routes>\r\n    </Routes>\r\n  )\r\n}\r\n\r\nexport default Content;"
+        }
+    ]
+}

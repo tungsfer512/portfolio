@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/Components/Content/Project/Project.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1659638555849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659638561932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,5 @@\n-import { NavLink, Link } from 'react-router-dom';\r\n \r\n-import Container from 'react-bootstrap/Container';\r\n-import Nav from 'react-bootstrap/Nav';\r\n-import Navbar from 'react-bootstrap/Navbar';\r\n-\r\n-import \"./Header.scss\";\r\n-\r\n const Header = (props) => {\r\n   return (\r\n     <header className=\"header sticky-top shadow\">\r\n       <Navbar bg=\"light\" expand=\"lg\">\r\n"
+                },
+                {
+                    "date": 1659638569970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,8 @@\n \r\n const Header = (props) => {\r\n   return (\r\n-    <header className=\"header sticky-top shadow\">\r\n-      <Navbar bg=\"light\" expand=\"lg\">\r\n-        <Container fluid=\"xxl\">\r\n-          <Link to=\"/\" className=\"navbar-brand\">BUI VAN TUNG</Link>\r\n-          <Navbar.Toggle aria-controls=\"basic-navbar-nav\" />\r\n-          <Navbar.Collapse id=\"basic-navbar-nav\">\r\n-            <Nav className=\"me-auto\">\r\n-              <NavLink to=\"/\" className=\"nav-link\">Home</NavLink>\r\n-              <NavLink to=\"/about\" className=\"nav-link\">About</NavLink>\r\n-              {/* <NavLink to=\"/skills\" className=\"nav-link\">Skills</NavLink> */}\r\n-            </Nav>\r\n-          </Navbar.Collapse>\r\n-        </Container>\r\n-      </Navbar>\r\n-    </header>\r\n+    <></>\r\n   )\r\n }\r\n \r\n export default Header;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638576150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n-const Header = (props) => {\r\n+const Project = (props) => {\r\n   return (\r\n     <></>\r\n   )\r\n }\r\n \r\n\\ No newline at end of file\n-export default Header;\n+export default Project;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638632633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n const Project = (props) => {\r\n   return (\r\n-    <></>\r\n+    <>hel</>\r\n   )\r\n }\r\n \r\n export default Project;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638640856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n const Project = (props) => {\r\n   return (\r\n-    <>hel</>\r\n+    <>helo this is project</>\r\n   )\r\n }\r\n \r\n export default Project;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638882478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n const Project = (props) => {\r\n   return (\r\n-    <>helo this is project</>\r\n+    Con\r\n   )\r\n }\r\n \r\n export default Project;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638889240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n+import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    Con\r\n+    <Container\r\n   )\r\n }\r\n \r\n export default Project;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638895894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container\r\n+    <Container fluid></Container>\r\n   )\r\n }\r\n \r\n export default Project;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638903606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid></Container>\r\n+    <Container fluid=\"\"></Container>\r\n   )\r\n }\r\n \r\n export default Project;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638910733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid=\"\"></Container>\r\n+    <Container fluid=\"xxl\" clas>\r\n+\r\n+    </Container>\r\n   )\r\n }\r\n \r\n export default Project;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659638921160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid=\"xxl\" clas>\r\n+    <Container fluid=\"xxl\" className=\"mh-vh-100\">\r\n \r\n     </Container>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659638929818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid=\"xxl\" className=\"mh-vh-100\">\r\n+    <Container fluid=\"xxl\" className=\"mh-vh-100 bg-secondary\">\r\n \r\n     </Container>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659638992830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Project = (props) => {\r\n   return (\r\n     <Container fluid=\"xxl\" className=\"mh-vh-100 bg-secondary\">\r\n-\r\n+      sdf\r\n     </Container>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659639003399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid=\"xxl\" className=\"mh-vh-100 bg-secondary\">\r\n+    <Container fluid=\"xxl\" className=\"mhbg-secondary\">\r\n       sdf\r\n     </Container>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659639009169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid=\"xxl\" className=\"mhbg-secondary\">\r\n+    <Container fluid=\"xxl\" className=\"mh-100 bg-secondary\">\r\n       sdf\r\n     </Container>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659639014838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid=\"xxl\" className=\"mh-100 bg-secondary\">\r\n+    <Container fluid=\"xxl\" className=\"mh-vh-100 bg-secondary\">\r\n       sdf\r\n     </Container>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659639029849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid=\"xxl\" className=\"mh-vh-100 bg-secondary\">\r\n+    <Container fluid=\"xxl\" className=\"m-vh-100 bg-secondary\">\r\n       sdf\r\n     </Container>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659639054609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Container } from \"react-bootstrap\";\r\n \r\n const Project = (props) => {\r\n   return (\r\n-    <Container fluid=\"xxl\" className=\"m-vh-100 bg-secondary\">\r\n+    <Container fluid=\"xxl\" className=\"min-vh-100 bg-secondary bg-opacity-10\">\r\n       sdf\r\n     </Container>\r\n   )\r\n }\r\n"
+                }
+            ],
+            "date": 1659638555849,
+            "name": "Commit-0",
+            "content": "import { NavLink, Link } from 'react-router-dom';\r\n\r\nimport Container from 'react-bootstrap/Container';\r\nimport Nav from 'react-bootstrap/Nav';\r\nimport Navbar from 'react-bootstrap/Navbar';\r\n\r\nimport \"./Header.scss\";\r\n\r\nconst Header = (props) => {\r\n  return (\r\n    <header className=\"header sticky-top shadow\">\r\n      <Navbar bg=\"light\" expand=\"lg\">\r\n        <Container fluid=\"xxl\">\r\n          <Link to=\"/\" className=\"navbar-brand\">BUI VAN TUNG</Link>\r\n          <Navbar.Toggle aria-controls=\"basic-navbar-nav\" />\r\n          <Navbar.Collapse id=\"basic-navbar-nav\">\r\n            <Nav className=\"me-auto\">\r\n              <NavLink to=\"/\" className=\"nav-link\">Home</NavLink>\r\n              <NavLink to=\"/about\" className=\"nav-link\">About</NavLink>\r\n              {/* <NavLink to=\"/skills\" className=\"nav-link\">Skills</NavLink> */}\r\n            </Nav>\r\n          </Navbar.Collapse>\r\n        </Container>\r\n      </Navbar>\r\n    </header>\r\n  )\r\n}\r\n\r\nexport default Header;"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "sourceFile": "src/Components/Content/Child.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1659532344786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659532351233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n import { Outlet } from \"react-router-dom\";\r\n \r\n-const Skills = (props) => {\r\n+const Child = (props) => {\r\n   return (\r\n-    <div className=\"skills\">\r\n-      hello Skills\r\n+    <div className=\"Child\">\r\n+      hello Child\r\n       <Breadcrumb></Breadcrumb>\r\n       l\r\n       <Outlet />\r\n     </div>\r\n   )\r\n\\ No newline at end of file\n }\r\n \r\n-export default Skills;\n+export default Child;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659532363638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,11 @@\n import { Outlet } from \"react-router-dom\";\r\n \r\n const Child = (props) => {\r\n   return (\r\n-    <div className=\"Child\">\r\n+    <div className=\"child\">\r\n       hello Child\r\n       <Breadcrumb></Breadcrumb>\r\n-      l\r\n-      <Outlet />\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659532371599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n-import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n-import { Outlet } from \"react-router-dom\";\r\n+import Breadcrumb from \"../\";\r\n \r\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n"
+                },
+                {
+                    "date": 1659532376932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb from \"../\";\r\n+import Breadcrumb from \"../Content\";\r\n \r\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n"
+                },
+                {
+                    "date": 1659532383608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb from \"../Content\";\r\n+import Breadcrumb from \"./Breadcrumb\";\r\n \r\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n"
+                },
+                {
+                    "date": 1659532557753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-import Breadcrumb from \"./Breadcrumb\";\r\n+import Breadcrumb from \"./Breadcrumb/Breadcrumb\";\r\n \r\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n-      hello Child\r\n+      hello {}\r\n       <Breadcrumb></Breadcrumb>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532564401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n-      hello {}\r\n+      hello {props}\r\n       <Breadcrumb></Breadcrumb>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532588001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,10 @@\n \r\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n-      hello {props}\r\n       <Breadcrumb></Breadcrumb>\r\n+      hello {props.decs}\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659537022904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n       <Breadcrumb></Breadcrumb>\r\n-      hello {props.decs}\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659538593294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n-      <Breadcrumb></Breadcrumb>\r\n+      hello \r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659538641049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb from \"./Breadcrumb/Breadcrumb\";\r\n+import Breadcrumb from \"./Breadcrumb/\";\r\n \r\n const Child = (props) => {\r\n   return (\r\n     <div className=\"child\">\r\n"
+                }
+            ],
+            "date": 1659532344786,
+            "name": "Commit-0",
+            "content": "import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\nimport { Outlet } from \"react-router-dom\";\r\n\r\nconst Skills = (props) => {\r\n  return (\r\n    <div className=\"skills\">\r\n      hello Skills\r\n      <Breadcrumb></Breadcrumb>\r\n      l\r\n      <Outlet />\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Skills;"
+        }
+    ]
+}

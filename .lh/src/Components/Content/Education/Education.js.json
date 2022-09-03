@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/Components/Content/Education/Education.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1659518464184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659518469985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n \r\n-const About = (props) => {\r\n+const Education = (props) => {\r\n   return (\r\n-    <div className=\"about\">\r\n-      hello About\r\n+    <div className=\"Education\">\r\n+      hello Education\r\n     </div>\r\n   )\r\n\\ No newline at end of file\n }\r\n \r\n-export default About;\n+export default Education;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659531610133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n \r\n const Education = (props) => {\r\n   return (\r\n-    <div className=\"Education\">\r\n+    <div className=\"education\">\r\n       hello Education\r\n+      <Breadcrumb></Breadcrumb>\r\n+\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659537567219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n+import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const Education = (props) => {\r\n   return (\r\n     <div className=\"education\">\r\n-      hello Education\r\n       <Breadcrumb></Breadcrumb>\r\n \r\n     </div>\r\n   )\r\n"
+                },
+                {
+                    "date": 1659544734531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n+import MyBreadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const Education = (props) => {\r\n   return (\r\n     <div className=\"education\">\r\n"
+                },
+                {
+                    "date": 1659544740631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-import MyBreadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n+import MyBreadcrumb from \"../Breadcrumb/MyBreadcrumb\";\r\n \r\n const Education = (props) => {\r\n   return (\r\n     <div className=\"education\">\r\n-      <Breadcrumb></Breadcrumb>\r\n+      <MyBreadcrumb></MyBreadcrumb>\r\n \r\n     </div>\r\n   )\r\n }\r\n"
+                }
+            ],
+            "date": 1659518464184,
+            "name": "Commit-0",
+            "content": "\r\nconst About = (props) => {\r\n  return (\r\n    <div className=\"about\">\r\n      hello About\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default About;"
+        }
+    ]
+}

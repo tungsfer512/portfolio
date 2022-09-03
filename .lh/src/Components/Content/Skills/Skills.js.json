@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/Components/Content/Skills/Skills.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1659518385992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659518391774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n \r\n-const About = (props) => {\r\n+const Sh = (props) => {\r\n   return (\r\n-    <div className=\"about\">\r\n-      hello About\r\n+    <div className=\"Sh\">\r\n+      hello Sh\r\n     </div>\r\n   )\r\n\\ No newline at end of file\n }\r\n \r\n-export default About;\n+export default Sh;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659518397394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n \r\n-const Sh = (props) => {\r\n+const Skills = (props) => {\r\n   return (\r\n-    <div className=\"Sh\">\r\n-      hello Sh\r\n+    <div className=\"skills\">\r\n+      hello Skills\r\n     </div>\r\n   )\r\n\\ No newline at end of file\n }\r\n \r\n-export default Sh;\n+export default Skills;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659531630917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n \r\n const Skills = (props) => {\r\n   return (\r\n     <div className=\"skills\">\r\n+      <Breadcrumb></Breadcrumb>\r\n       hello Skills\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532272025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n+import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n \r\n const Skills = (props) => {\r\n   return (\r\n     <div className=\"skills\">\r\n+      hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n-      hello Skills\r\n+      <Out\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659532279866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   return (\r\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n-      <Out\r\n+      <Outlet/>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659532286458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n+import {Out}\r\n \r\n const Skills = (props) => {\r\n   return (\r\n     <div className=\"skills\">\r\n"
+                },
+                {
+                    "date": 1659532295589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n-import {Out}\r\n+import {Outlet} from \"rea\"\r\n \r\n const Skills = (props) => {\r\n   return (\r\n     <div className=\"skills\">\r\n"
+                },
+                {
+                    "date": 1659532318391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n-import {Outlet} from \"rea\"\r\n+import { Outlet } from \"react-router-dom\";\r\n \r\n const Skills = (props) => {\r\n   return (\r\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n-      <Outlet/>\r\n+      <Outlet />\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659532325224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   return (\r\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n+      l\r\n       <Outlet />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532401732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import Breadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n-import { Outlet } from \"react-router-dom\";\r\n+import { Outlet, Link } from \"react-router-dom\";\r\n \r\n const Skills = (props) => {\r\n   return (\r\n     <div className=\"skills\">\r\n"
+                },
+                {
+                    "date": 1659532409512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n-      l\r\n+      <Link\r\n       <Outlet />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532416188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n-      <Link\r\n+      <Link to=\"\"></Link>\r\n       <Outlet />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532422197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n-      <Link to=\"\"></Link>\r\n+      <Link to=\"/react\">act</Link>\r\n       <Outlet />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532429756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n   return (\r\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n-      <Link to=\"/react\">act</Link>\r\n+      <Link to=\"/react\">React</Link>\r\n+      <Link to=\"/node\">React</Link>\r\n+      <Link to=\"/react\">React</Link>\r\n       <Outlet />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532436580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n       <Link to=\"/react\">React</Link>\r\n-      <Link to=\"/node\">React</Link>\r\n-      <Link to=\"/react\">React</Link>\r\n+      <Link to=\"/node\">Node</Link>\r\n+      <Link to=\"/react\">Socket.io</Link>\r\n       <Outlet />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532452392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n       <Link to=\"/react\">React</Link>\r\n       <Link to=\"/node\">Node</Link>\r\n-      <Link to=\"/react\">Socket.io</Link>\r\n+      <Link to=\"/socketio\">Socket.io</Link>\r\n       <Outlet />\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659532468143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <div className=\"skills\">\r\n       hello Skills\r\n       <Breadcrumb></Breadcrumb>\r\n       <Link to=\"react\">React</Link>\r\n-      <Link to=\"/node\">Node</Link>\r\n+      <Link to=\"node\">Node</Link>\r\n       <Link to=\"/socketio\">Socket.io</Link>\r\n       <Outlet />\r\n     </div>\r\n   )\r\n"
+                },
+                {
+                    "date": 1659544770176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import MyBreadcrumb from \"../Breadcrumb/Breadcrumb\";\r\n+import MyBreadcrumb from \"../Breadcrumb/MyBreadcrumb\";\r\n import { Outlet, Link } from \"react-router-dom\";\r\n \r\n const Skills = (props) => {\r\n   return (\r\n"
+                }
+            ],
+            "date": 1659518385992,
+            "name": "Commit-0",
+            "content": "\r\nconst About = (props) => {\r\n  return (\r\n    <div className=\"about\">\r\n      hello About\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default About;"
+        }
+    ]
+}

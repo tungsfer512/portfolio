@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/Components/Content/Breadcrumb/Breadcrumb.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1659544576784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659544583681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,10 @@\n             </Breadcrumb.Item>\r\n           )\r\n         })\r\n       }\r\n-        <Breadcrumb.Item active className=\"text-black fs-4\">{page[0].toUpperCase() + page.substring(1)}</Breadcrumb.Item>\r\n+      <Breadcrumb.Item active className=\"text-black fs-4\">{page[0].toUpperCase() + page.substring(1)}</Breadcrumb.Item>\r\n     </Breadcrumb>\r\n   )\r\n }\r\n \r\n\\ No newline at end of file\n-export default Breadcrumb;\n+export default Breadcrumb;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659544619405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n } from \"react-router-dom\";\r\n import { Breadcrumb } from \"react-bootstrap\";\r\n import bgImg from \"../../../Assets/Images/BreadcrumbBackground.jpeg\"\r\n \r\n-const Breadcrumb = (props) => {\r\n+const Breadcrumb = (props) => {\r\n \r\n   let location = useLocation();\r\n \r\n   console.log(location)\r\n"
+                },
+                {
+                    "date": 1659544644462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n   Link,\r\n   useLocation,\r\n } from \"react-router-dom\";\r\n import { Breadcrumb } from \"react-bootstrap\";\r\n-import bgImg from \"../../../Assets/Images/BreadcrumbBackground.jpeg\"\r\n \r\n const Breadcrumb = (props) => {\r\n \r\n   let location = useLocation();\r\n"
+                },
+                {
+                    "date": 1659544665214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   useLocation,\r\n } from \"react-router-dom\";\r\n import { Breadcrumb } from \"react-bootstrap\";\r\n \r\n-const Breadcrumb = (props) => {\r\n+const MYBreadcrumb = (props) => {\r\n \r\n   let location = useLocation();\r\n \r\n   console.log(location)\r\n"
+                },
+                {
+                    "date": 1659544673691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   useLocation,\r\n } from \"react-router-dom\";\r\n import { Breadcrumb } from \"react-bootstrap\";\r\n \r\n-const MYBreadcrumb = (props) => {\r\n+const MyBreadcrumb = (props) => {\r\n \r\n   let location = useLocation();\r\n \r\n   console.log(location)\r\n@@ -42,5 +42,5 @@\n     </Breadcrumb>\r\n   )\r\n }\r\n \r\n-export default Breadcrumb;\n\\ No newline at end of file\n+export default MyBreadcrumb;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1659544576784,
+            "name": "Commit-0",
+            "content": "import { useEffect, useState } from \"react\";\r\nimport {\r\n  Link,\r\n  useLocation,\r\n} from \"react-router-dom\";\r\nimport { Breadcrumb } from \"react-bootstrap\";\r\nimport bgImg from \"../../../Assets/Images/BreadcrumbBackground.jpeg\"\r\n\r\nconst Breadcrumb = (props) => {\r\n\r\n  let location = useLocation();\r\n\r\n  console.log(location)\r\n  let pathName = ['home', ...location.pathname.slice(1).split('/')];\r\n  pathName = pathName.filter((path) => path !== '');\r\n  console.log(pathName)\r\n  let page = pathName?.pop();\r\n  console.log(page);\r\n  useEffect(() => {\r\n\r\n  }, []);\r\n\r\n  return (\r\n    <Breadcrumb style={{\r\n      height: 200,\r\n    }} className=\"d-flex align-items-center justify-content-center bg-success bg-opacity-50\">\r\n      {\r\n        pathName.length !== 0\r\n        &&\r\n        pathName.map((alter) => {\r\n          return (\r\n            <Breadcrumb.Item linkAs=\"span\" key={alter} className=\"fs-4\">\r\n              <Link to={(\"/\" + alter) === \"/home\" ? \"/\" : (\"/\" + alter)}\r\n                className=\"link-secondary text-decoration-none fs-4\"\r\n              >\r\n                {alter[0]?.toUpperCase() + alter?.substring(1)}\r\n              </Link>\r\n            </Breadcrumb.Item>\r\n          )\r\n        })\r\n      }\r\n        <Breadcrumb.Item active className=\"text-black fs-4\">{page[0].toUpperCase() + page.substring(1)}</Breadcrumb.Item>\r\n    </Breadcrumb>\r\n  )\r\n}\r\n\r\nexport default Breadcrumb;"
+        }
+    ]
+}

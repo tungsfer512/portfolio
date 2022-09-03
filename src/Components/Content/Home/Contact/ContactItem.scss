@@ -1,0 +1,11 @@
+.contactItem {
+  height: 60px;
+  width: 60px;
+  &:hover {
+    background-color: white !important;
+    i {
+      color: black !important;
+    }
+  }
+  transition: all 0.3s ease-in-out;
+}

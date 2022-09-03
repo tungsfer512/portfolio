@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/Components/Content/Skills/SkillHeading.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1659629683910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659629694823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n \r\n-const SkillItem = (props) => {\r\n+const SkillHeading = (props) => {\r\n   return (\r\n-    <div className=\"skillItem\">\r\n+    <div className=\"skillHeading\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n \r\n     </div>\r\n   )\r\n }\r\n\\ No newline at end of file\n \r\n-export default SkillItem;\n+export default SkillHeading;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659629728988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n const SkillHeading = (props) => {\r\n   return (\r\n     <div className=\"skillHeading\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n-\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659629893858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n const SkillHeading = (props) => {\r\n   return (\r\n-    <div className=\"skillHeading\">\r\n+    <div className=\"skillHeading \">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659629903941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n const SkillHeading = (props) => {\r\n   return (\r\n-    <div className=\"skillHeading \">\r\n+    <div className=\"skillHeading m-4 bg-\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659629924857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n const SkillHeading = (props) => {\r\n   return (\r\n-    <div className=\"skillHeading m-4 bg-\">\r\n+    <div className=\"skillHeading m-4 bg-white p-4\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659629933257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n const SkillHeading = (props) => {\r\n   return (\r\n-    <div className=\"skillHeading m-4 bg-white p-4 ty\">\r\n+    <div className=\"skillHeading m-4 bg-white p-4 t\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659629972136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \r\n const SkillHeading = (props) => {\r\n   return (\r\n-    <div className=\"skillHeading m-4 bg-white p-4 text-center fw-bold \">\r\n+    <div className=\"skillHeading m-4 bg-white p-4 text-center fw-bold r\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n   )\r\n }\r\n"
+                }
+            ],
+            "date": 1659629683910,
+            "name": "Commit-0",
+            "content": "\r\nconst SkillItem = (props) => {\r\n  return (\r\n    <div className=\"skillItem\">\r\n      <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default SkillItem;"
+        }
+    ]
+}

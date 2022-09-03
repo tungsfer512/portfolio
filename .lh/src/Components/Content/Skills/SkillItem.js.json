@@ -1,0 +1,106 @@
+{
+    "sourceFile": "src/Components/Content/Skills/SkillItem.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1659623856723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659623866852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import MyBreadcrumb from \"../Breadcrumb/MyBreadcrumb\";\r\n import { Outlet, Link } from \"react-router-dom\";\r\n \r\n-const Skills = (props) => {\r\n+const Skill = (props) => {\r\n   return (\r\n-    <div className=\"skills\">\r\n+    <div className=\"skill\">\r\n       <MyBreadcrumb></MyBreadcrumb>\r\n       <Link to=\"reactjs\">React</Link>\r\n       <Link to=\"nodejs\">Node</Link>\r\n       <Link to=\"socketio\">Socket.io</Link>\r\n@@ -12,5 +12,5 @@\n     </div>\r\n   )\r\n }\r\n \r\n-export default Skills;\n\\ No newline at end of file\n+export default Skill;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659623879375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n-import MyBreadcrumb from \"../Breadcrumb/MyBreadcrumb\";\r\n-import { Outlet, Link } from \"react-router-dom\";\r\n \r\n-const Skill = (props) => {\r\n+const SkillItem = (props) => {\r\n   return (\r\n-    <div className=\"skill\">\r\n+    <div className=\"skillItem\">\r\n       <MyBreadcrumb></MyBreadcrumb>\r\n       <Link to=\"reactjs\">React</Link>\r\n       <Link to=\"nodejs\">Node</Link>\r\n       <Link to=\"socketio\">Socket.io</Link>\r\n@@ -12,5 +10,5 @@\n     </div>\r\n   )\r\n }\r\n \r\n-export default Skill;\n\\ No newline at end of file\n+export default SkillItem;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659623899561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      <MyBreadcrumb></MyBreadcrumb>\r\n-      <Link to=\"reactjs\">React</Link>\r\n-      <Link to=\"nodejs\">Node</Link>\r\n-      <Link to=\"socketio\">Socket.io</Link>\r\n-      <Outlet />\r\n+      \r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659623907600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      \r\n+      hello skill item\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659626890094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      hello skill item\r\n+      <div className=\"text-uppercase mb-3 fs-5\">Summary</div>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659627039027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      <div className=\"text-uppercase mb-3 fs-5\">Summary</div>\r\n+      <div className=\"text-uppercase mb-3 fs-5 text-bl\">Summary</div>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659627045398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      <div className=\"text-uppercase mb-3 fs-5 text-bl\">Summary</div>\r\n+      <div className=\"text-uppercase mb-3 fs-5 text-black text-de\">Summary</div>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659627102916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      <div className=\"text-uppercase mb-3 fs-5 text-black text-de\">Summary</div>\r\n+      <div className=\"text-uppercase fs-5 text-black text-decoration-none\">Summary</div>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659627978004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      <div className=\"text-uppercase fs-5 text-black text-decoration-none\">Summary</div>\r\n+      <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.tit}</div>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659627985011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.tit}</div>\r\n+      <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659629422780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n+      \r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659630701981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n-      \r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1659630736135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n   return (\r\n     <div className=\"skillItem\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n+    \r\n   )\r\n }\r\n \r\n export default SkillItem;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659630745544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,13 @@\n     <div className=\"skillItem\">\r\n       <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n     \r\n+<Col xs={12} sm={6} md={4} lg={3} className=\"p-3 bg-transparent\">\r\n+          <div className=\"p-3 bg-white rounded-3\">\r\n+            <SkillItem title=\"ReactJs\"></SkillItem>\r\n+          </div>\r\n+        </Col>\r\n   )\r\n }\r\n \r\n export default SkillItem;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659630755308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <div className=\"skillItem\">\r\n-      <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n     </div>\r\n     \r\n <Col xs={12} sm={6} md={4} lg={3} className=\"p-3 bg-transparent\">\r\n           <div className=\"p-3 bg-white rounded-3\">\r\n+  <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n             <SkillItem title=\"ReactJs\"></SkillItem>\r\n           </div>\r\n         </Col>\r\n   )\r\n"
+                },
+                {
+                    "date": 1659630761793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n     \r\n <Col xs={12} sm={6} md={4} lg={3} className=\"p-3 bg-transparent\">\r\n           <div className=\"p-3 bg-white rounded-3\">\r\n   <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n-            <SkillItem title=\"ReactJs\"></SkillItem>\r\n           </div>\r\n         </Col>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1659630771232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,14 @@\n+import { Col } from \"react-bootstrap\";\r\n \r\n const SkillItem = (props) => {\r\n   return (\r\n-    <div className=\"skillItem\">\r\n-    </div>\r\n-    \r\n-<Col xs={12} sm={6} md={4} lg={3} className=\"p-3 bg-transparent\">\r\n-          <div className=\"p-3 bg-white rounded-3\">\r\n-  <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n-          </div>\r\n-        </Col>\r\n+\r\n+    <Col xs={12} sm={6} md={4} lg={3} className=\"p-3 bg-transparent\">\r\n+      <div className=\"p-3 bg-white rounded-3\">\r\n+        <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n+      </div>\r\n+    </Col>\r\n   )\r\n }\r\n \r\n export default SkillItem;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659631582655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n import { Col } from \"react-bootstrap\";\r\n \r\n const SkillItem = (props) => {\r\n   return (\r\n-\r\n-    <Col xs={12} sm={6} md={4} lg={3} className=\"p-3 bg-transparent\">\r\n+    <Col xs={12} sm={6} md={4} lg={6} className=\"p-3 bg-transparent\">\r\n       <div className=\"p-3 bg-white rounded-3\">\r\n         <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n       </div>\r\n     </Col>\r\n"
+                },
+                {
+                    "date": 1659631620849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Col } from \"react-bootstrap\";\r\n \r\n const SkillItem = (props) => {\r\n   return (\r\n-    <Col xs={12} sm={6} md={4} lg={6} className=\"p-3 bg-transparent\">\r\n+    <Col xs={12} sm={12} md={6} lg={6} className=\"p-3 bg-transparent\">\r\n       <div className=\"p-3 bg-white rounded-3\">\r\n         <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n       </div>\r\n     </Col>\r\n"
+                },
+                {
+                    "date": 1659631635868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Col } from \"react-bootstrap\";\r\n \r\n const SkillItem = (props) => {\r\n   return (\r\n-    <Col xs={12} sm={12} md={6} lg={6} className=\"p-3 bg-transparent\">\r\n+    <Col xs={12} md={6} lg={6} className=\"p-3 bg-transparent\">\r\n       <div className=\"p-3 bg-white rounded-3\">\r\n         <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n       </div>\r\n     </Col>\r\n"
+                },
+                {
+                    "date": 1659631641835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Col } from \"react-bootstrap\";\r\n \r\n const SkillItem = (props) => {\r\n   return (\r\n-    <Col xs={12} md={6} lg={6} className=\"p-3 bg-transparent\">\r\n+    <Col xs={12} lg={6} className=\"p-3 bg-transparent\">\r\n       <div className=\"p-3 bg-white rounded-3\">\r\n         <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n       </div>\r\n     </Col>\r\n"
+                },
+                {
+                    "date": 1659631660120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const SkillItem = (props) => {\r\n   return (\r\n     <Col xs={12} lg={6} className=\"p-3 bg-transparent\">\r\n-      <div className=\"p-3 bg-white rounded-3\">\r\n+      <div className=\"p-3 bg-white rounded-3 border\">\r\n         <div className=\"text-uppercase fs-5 text-black text-decoration-none\">{props.title}</div>\r\n       </div>\r\n     </Col>\r\n   )\r\n"
+                }
+            ],
+            "date": 1659623856723,
+            "name": "Commit-0",
+            "content": "import MyBreadcrumb from \"../Breadcrumb/MyBreadcrumb\";\r\nimport { Outlet, Link } from \"react-router-dom\";\r\n\r\nconst Skills = (props) => {\r\n  return (\r\n    <div className=\"skills\">\r\n      <MyBreadcrumb></MyBreadcrumb>\r\n      <Link to=\"reactjs\">React</Link>\r\n      <Link to=\"nodejs\">Node</Link>\r\n      <Link to=\"socketio\">Socket.io</Link>\r\n      <Outlet />\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Skills;"
+        }
+    ]
+}
